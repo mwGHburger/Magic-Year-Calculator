@@ -26,9 +26,10 @@ namespace Magic_Year_Calculator
 
         private static void DisplayResults(Person person)
         {
-            Display("Your magic age details are: \n");
+            Display("\nYour magic age details are: \n");
             Display($"Name: {person.Name} {person.Surname}");
-            //Display($"Monthly Salary: {Calculator.CalculateMonthlySalaryOf(person)}");
+            Display($"Monthly Salary: {Math.Round(Calculator.CalculateMonthlySalaryOf(person))}");
+            Display($"Magic Year: {Calculator.CalculateMagicYearOf(person)}");
         }
 
         private static void Display(string text)
