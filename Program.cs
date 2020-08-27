@@ -6,7 +6,8 @@ namespace Magic_Year_Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Starting the Magic Year Calculator...");
+            MagicYearCalculator.Run();
         }
     }
 }
