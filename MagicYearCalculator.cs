@@ -4,6 +4,7 @@ namespace Magic_Year_Calculator
 {
     public class MagicYearCalculator
     {
+        // STATIC METHODS
         public static void Run()
         {
             Person person = createPerson();
