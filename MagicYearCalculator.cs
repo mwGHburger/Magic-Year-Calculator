@@ -7,6 +7,7 @@ namespace Magic_Year_Calculator
         public static void Run()
         {
             Person person = createPerson();
+            MagicYearCalculator.DisplayResults(person);
         }
 
         private static Person createPerson()
@@ -21,6 +22,13 @@ namespace Magic_Year_Calculator
             int workStartYear = Convert.ToInt32(Console.ReadLine());
 
             return new Person(name, surname, annualSalary, workStartYear);
+        }
+
+        private static void DisplayResults(Person person)
+        {
+            Display("Your magic age details are: \n");
+            Display($"Name: {person.Name} {person.Surname}");
+            //Display($"Monthly Salary: {Calculator.CalculateMonthlySalaryOf(person)}");
         }
 
         private static void Display(string text)
